@@ -10,7 +10,7 @@ Example:- ssh -p 21350 root@216.32.44.12
 #### Note:- Run Below Commands on Your Local Machine, Not on Your VPS or Remote Server
 - Generate SSH Key
 ```sh
-ssh-keygen -f C:\Users\R/.ssh/my_key -t rsa -b 4096
+ssh-keygen -f C:\Users\R/.ssh/my_key -t rsa -b 4096 OR ssh-keygen -t rsa -b 4096
 ```
 - Copy SSH Public Key to Remote Server (Not for Windows)
 ```sh
