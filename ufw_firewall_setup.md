@@ -111,4 +111,29 @@ ufw disable
 ```
 why?
 Its because firewall is always open even though we exit from remote server 
-If you enabled ufw (firewall) and then changed the SSH port (e.g., from 22 to another port like 2222) but didn’t allow the new port in UFW before exiting, we may now be locked out of SSH access
+If you enabled UFW (firewall) and then changed the SSH port (e.g., from 22 to another port like 2222) but didn’t allow the new port in UFW before exiting, we may now be locked out of SSH access
+that's why we must allow the new SSH port in UFW before we restart SSH or log out. then how ?
+1st solution is disabling the firewall which i mentioned above
+OR if the firewall is active and need to change the port then 
+After editing config file
+```sh
+nano /etc/ssh/sshd_config
+```
+and changing port to 2222
+Allow the new port through the firewall:
+```sh
+ ufw allow 2222/tcp
+```
+then after only Restart the SSH service:
+```sh
+sudo systemctl restart ssh
+```
+Test new port in a separate terminal:
+```sh
+ssh -p 2222 username@your_server_ip
+```
+Once confirmed working, you can close the old session.
+
+❌ What not to do:
+Don’t restart SSH before allowing the new port in UFW (firewall).
+Don’t log out before verifying the new port works.
