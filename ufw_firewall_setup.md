@@ -98,7 +98,8 @@ ufw reset
 - Some usefull connection which You may want to allow
 ```sh
 To Allow SSH Connection: ufw allow ssh or ufw allow 22/tcp
-To Secure Web Server: ufw allow 80/tcp
+To Secure Web Server: ufw allow 80/tcp or ufw allow http
+To allow https: ufw allow 443/tcp or ufw allow https 
 To Allow FTP Connection: ufw allow ftp or ufw allow 21/tcp and 20/ftp
 To Allow Web Server Profile: ufw allow www
 ```
