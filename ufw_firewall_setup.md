@@ -103,3 +103,12 @@ To allow https: ufw allow 443/tcp or ufw allow https
 To Allow FTP Connection: ufw allow ftp or ufw allow 21/tcp and 20/ftp
 To Allow Web Server Profile: ufw allow www
 ```
+IMPORTANT NOTE 
+If you are practing firewall 
+Always disable firewall before exiting from remote server 
+```sh
+ufw disable
+```
+why?
+Its because firewall is always open even though we exit from remote server 
+If you enabled ufw (firewall) and then changed the SSH port (e.g., from 22 to another port like 2222) but didn’t allow the new port in UFW before exiting, we may now be locked out of SSH access
