@@ -103,9 +103,9 @@ To allow https: ufw allow 443/tcp or ufw allow https
 To Allow FTP Connection: ufw allow ftp or ufw allow 21/tcp and 20/ftp
 To Allow Web Server Profile: ufw allow www
 ```
-IMPORTANT NOTE 
-If you are practing firewall 
-Always disable firewall before exiting from remote server 
+IMPORTANT NOTE   
+If you are practing firewall  
+Always disable firewall before exiting from remote server   
 ```sh
 ufw disable
 ```
