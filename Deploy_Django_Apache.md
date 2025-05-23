@@ -58,7 +58,7 @@ Example:- ssh -p 22 raj@216.32.44.12
 ```sh
 sudo apt install apache2
 sudo apt install python
-sudo apt install libapache2-mod-wsgi-py3
+sudo apt install libapache2-mod-wsgi-py3 (wsgi= webserver gateway interface)
 sudo apt install python3-pip
 ```
 - Install virtualenv
