@@ -50,7 +50,9 @@ sudo ufw status verbose
 - Make Connection between Remote Server and Github via SSH Key
 - Generate SSH Keys
 ```sh
-ssh-keygen -t ed25519 -C "your_email@example.com"
+
+ssh-keygen -f /home/servername/.ssh/drf_ed91234 -t eded91234 -C "frontend"
+
 ```
 - If Permission Denied then Own .ssh then try again to Generate SSH Keys
 ```sh
