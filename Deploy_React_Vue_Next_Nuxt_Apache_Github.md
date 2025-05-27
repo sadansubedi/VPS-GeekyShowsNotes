@@ -147,6 +147,11 @@ Example:- cd /var/www/miniblog
 ```sh
 git pull
 ```
+working with ssh key then 
+```
+GIT_SSH_COMMAND='ssh -i ~/.ssh/ssh_key' git pull (ssh_key found inside .ssh in remote server )
+
+```
 - Create Production Build
 ```sh
 npm run build
