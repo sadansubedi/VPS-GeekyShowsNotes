@@ -64,7 +64,8 @@ sudo apt install python3-pip
 - Install virtualenv
 ```sh
 pip list
-sudo pip install virtualenv
+sudo pip install virtualenv or sudo apt install python3.12-venv
+ 
 ```
 - Verify Apache2 is Active and Running
 ```sh
@@ -102,6 +103,9 @@ Example:- virtualenv mb
 ```sh
 Syntax:- source virtualenv_name/bin/activate
 Example:- source mb/bin/activate
+OR
+python3 -m venv myenv
+source myenv/bin/activate
 ```
 - Install Dependencies
 ```sh
