@@ -61,6 +61,11 @@ sudo apt install python
 sudo apt install libapache2-mod-wsgi-py3 (wsgi= webserver gateway interface)
 sudo apt install python3-pip
 ```
+If there is error while installing then try
+```sh
+sudo apt update
+sudo apt upgrade
+```
 - Install virtualenv
 ```sh
 pip list
