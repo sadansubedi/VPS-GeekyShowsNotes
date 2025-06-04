@@ -186,6 +186,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 sudo service apache2 restart
 OR
 systemctl reload apache2
+OR
+sudo service apache2 graceful
 ```
 - You can check error logs If you get any error:
 ```sh
