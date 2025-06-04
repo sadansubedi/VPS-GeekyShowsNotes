@@ -163,6 +163,9 @@ sudo a2ensite your_domain.conf
 - Restart Apache2
 ```sh
 sudo service apache2 restart
+OR
+sudo service apache2 graceful
+
 ```
 - Open Django Project settings.py
 ```sh
