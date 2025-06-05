@@ -19,6 +19,10 @@ sudo apt install nginx
 ```sh
 sudo ufw allow "Nginx Full"
 ```
+check ufw allow
+```sh
+ sudo ufw status verbose
+```
 - Check Server IP on Web Browser You will see Nginx Default Page
 - Install MySQL
 ```sh
