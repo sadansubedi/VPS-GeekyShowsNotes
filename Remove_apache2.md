@@ -12,7 +12,7 @@ apt purge apache2 apache2-utils apache2-bin apache2.2-common
 ```
 - Remove other dependencies
 ```sh
-apt autoremove
+sudo apt autoremove
 ```
 - Check if There is any Folder or File
 ```sh
