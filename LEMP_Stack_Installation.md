@@ -15,6 +15,10 @@ sudo apt upgrade
 ```sh
 sudo apt install nginx
 ```
+Check version of Nginx
+```sh
+ nginx -v
+```
 - Allow Apache through Firewall
 ```sh
 sudo ufw allow "Nginx Full"
