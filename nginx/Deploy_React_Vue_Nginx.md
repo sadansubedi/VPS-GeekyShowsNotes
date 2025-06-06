@@ -121,7 +121,7 @@ server{
 ```
 - Enable Virtual Host or Create Symbolic Link of Virtual Host File
 ```sh
-cd /etc/nginx/sites-available/
+cd /etc/nginx/
 Syntax:- sudo ln -s /etc/nginx/sites-available/virtual_host_file /etc/nginx/sites-enabled/virtual_host_file
 Example:- sudo ln -s /etc/nginx/sites-available/sonamkumari.com /etc/nginx/sites-enabled/sonamkumari.com
 ```
