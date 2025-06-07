@@ -130,6 +130,9 @@ Example:- virtualenv mb
 ```sh
 Syntax:- source virtualenv_name/bin/activate
 Example:- source mb/bin/activate
+OR
+python3 -m venv myenv
+source myenv/bin/activate
 ```
 - Install Dependencies
 ```sh
