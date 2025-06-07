@@ -142,6 +142,10 @@ pip install -r requirements.txt
 ```sh
 pip install gunicorn
 ```
+- Check what we have install 
+```sh
+pip list
+```
 - Deactivate Virtualenv
 ```sh
 deactivate
