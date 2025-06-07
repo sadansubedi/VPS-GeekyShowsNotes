@@ -101,6 +101,10 @@ npm install
 ```sh
 npm run build
 ```
+-check 
+```sh
+ls -a
+```
 - Create Virtual Host File
 ```sh
 Syntax:- sudo nano /etc/nginx/sites-available/your_domain
